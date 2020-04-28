@@ -21,7 +21,7 @@
           <path
             d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143"
           />
-        </svg> -->
+        </svg>-->
         <el-form
           ref="loginForm"
           :model="loginForm"
@@ -72,6 +72,19 @@
           </el-tooltip>
           <el-button class="submit" id="submit" @click.native.prevent="handleLogin">Login</el-button>
         </el-form>
+      </div>
+    </div>
+    <div class="login-footer">
+      <div class="login-footer-content">
+        <span>开发人员：2016072053 周旭</span>
+        <el-popover placement="top-start" width="200" trigger="hover">
+          <div class="weixinCode">
+            <img src="https://img13.360buyimg.com/jdcms/s150x150_jfs/t1/10018/13/6490/138053/5c209aafEa10695fe/0d41fbfd0b2acdf1.jpg.webp" alt="">
+          </div>
+          <el-button type="text" slot="reference">联系方式：微信</el-button>
+        </el-popover>
+        <span>网站备案：鲁ICP备18044872号-1</span>
+        <a href="https://www.jianshu.com/u/76e71c842014">|&nbsp;博客：N1kopapa</a>
       </div>
     </div>
   </div>
@@ -298,10 +311,10 @@ $light_gray: #eee;
   background: $bg;
   display: flex;
   flex-direction: column;
-  height: calc(100% - 40px);
+  height: 100%;
   position: absolute;
   place-content: center;
-  width: calc(100% - 40px);
+  width: 100%;
   .login-container {
     display: flex;
     height: 320px;
@@ -391,6 +404,34 @@ $light_gray: #eee;
         .thirdparty-button {
           display: none;
         }
+      }
+    }
+  }
+  .login-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: #39424d;
+    color: #ffffff;
+    font-size: 14px;
+    padding-top: 10px;
+    .login-footer-content {
+      text-align: center;
+      /deep/ .el-button--text{
+        color:#ffffff
+      }
+      span {
+        // margin-top: 5px;
+        // display: block;
+        text-align: center;
+        margin: 0 auto;
+      }
+      span:after {
+        content: "  |  ";
+      }
+      span:last-of-type:after {
+        content: "";
       }
     }
   }

@@ -1,6 +1,11 @@
+<!--
+ * @version: 1.0.0
+ * @Author: zx
+ * @Date: 2020-04-21 14:01:29
+ -->
 <template>
-  <a href="https://github.com/PanJiaChen/vue-element-admin" target="_blank" class="github-corner" aria-label="View source on Github">
-    <svg
+  <a href="https://github.com/PanJiaChen/vue-element-admin" target="_blank" class="github-corner" aria-label="View source on Github"> -->
+     <svg
       width="80"
       height="80"
       viewBox="0 0 250 250"
