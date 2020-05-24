@@ -4,7 +4,7 @@
  * @Date: 2020-04-21 14:01:30
  */
 module.exports = {
-  title: 'Vue Element Admin',
+  title: '基于node.js在线租房平台',
 
   /**
    * @type {boolean} true | false

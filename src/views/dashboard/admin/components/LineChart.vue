@@ -90,7 +90,7 @@ export default {
           }
         },
         legend: {
-          data: ['expected', 'actual']
+          data: ['expected', '总计']
         },
         series: [{
           name: 'expected', itemStyle: {
@@ -109,7 +109,7 @@ export default {
           animationEasing: 'cubicInOut'
         },
         {
-          name: 'actual',
+          name: '总计',
           smooth: true,
           type: 'line',
           itemStyle: {

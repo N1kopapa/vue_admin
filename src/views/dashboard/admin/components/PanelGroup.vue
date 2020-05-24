@@ -7,7 +7,7 @@
         </div>
         <div class="card-panel-description">
           <div class="card-panel-text">
-            New Visits
+            平台用户统计
           </div>
           <count-to :start-val="0" :end-val="102400" :duration="2600" class="card-panel-num" />
         </div>
@@ -15,12 +15,12 @@
     </el-col>
     <el-col :xs="12" :sm="12" :lg="6" class="card-panel-col">
       <div class="card-panel" @click="handleSetLineChartData('messages')">
-        <div class="card-panel-icon-wrapper icon-message">
-          <svg-icon icon-class="message" class-name="card-panel-icon" />
+        <div class="card-panel-icon-wrapper icon-documentation">
+          <svg-icon icon-class="documentation" class-name="card-panel-icon" />
         </div>
         <div class="card-panel-description">
           <div class="card-panel-text">
-            Messages
+            房屋交易量统计
           </div>
           <count-to :start-val="0" :end-val="81212" :duration="3000" class="card-panel-num" />
         </div>
@@ -33,7 +33,7 @@
         </div>
         <div class="card-panel-description">
           <div class="card-panel-text">
-            Purchases
+            交易额统计
           </div>
           <count-to :start-val="0" :end-val="9280" :duration="3200" class="card-panel-num" />
         </div>
@@ -46,7 +46,7 @@
         </div>
         <div class="card-panel-description">
           <div class="card-panel-text">
-            Shoppings
+            上架房屋统计
           </div>
           <count-to :start-val="0" :end-val="13600" :duration="3600" class="card-panel-num" />
         </div>
@@ -98,7 +98,7 @@ export default {
         background: #40c9c6;
       }
 
-      .icon-message {
+      .icon-documentation {
         background: #36a3f7;
       }
 
@@ -115,7 +115,7 @@ export default {
       color: #40c9c6;
     }
 
-    .icon-message {
+    .icon-documentation {
       color: #36a3f7;
     }
 
@@ -133,6 +133,7 @@ export default {
       padding: 16px;
       transition: all 0.38s ease-out;
       border-radius: 6px;
+      width: 20%;
     }
 
     .card-panel-icon {
@@ -141,10 +142,12 @@ export default {
     }
 
     .card-panel-description {
+      text-align: center;
       float: right;
       font-weight: bold;
       margin: 26px;
       margin-left: 0px;
+      width: 60%;
 
       .card-panel-text {
         line-height: 18px;

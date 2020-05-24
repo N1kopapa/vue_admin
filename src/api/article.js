@@ -39,3 +39,11 @@ export function updateArticle(data) {
     data
   })
 }
+export function fetchUserList(data) {
+  return request({
+    url: '/api/user',
+    method: 'get',
+    data
+  })
+}
+
