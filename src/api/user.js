@@ -24,3 +24,10 @@ export function logout() {
     method: 'post'
   })
 }
+export function fetchUserList(data) {
+  return request({
+    url: '/api/user',
+    method: 'get',
+    params: data
+  })
+}
